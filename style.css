@@ -59,3 +59,24 @@ animation-name: shades;
 animation-duration: 4s;
 
 }
+
+@media screen and (max-width: 400px){
+    .shades {
+        left: 38vw;
+    }
+    @keyframes shades {
+        0% { height: 20vh;
+            position: fixed;
+            top: 0;
+            left: 46vw;
+            display: none}
+        100% {top: 39vh;
+            left: 38vw;
+            position: fixed;
+        display: block;}
+    
+    }
+
+
+
+}
