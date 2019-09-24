@@ -53,7 +53,7 @@ h1 {
 .shades {
 height: 20vh;
 position: fixed;
-top: 39vh;
+top: 42vh;
 left: 46vw;
 animation-name: shades;
 animation-duration: 4s;
@@ -70,7 +70,7 @@ animation-duration: 4s;
             top: 0;
             left: 46vw;
             display: none}
-        100% {top: 39vh;
+        100% {top: 42vh;
             left: 38vw;
             position: fixed;
         display: block;}
