@@ -53,7 +53,7 @@ h1 {
 .shades {
 height: 20vh;
 position: fixed;
-top: 42vh;
+top: 39vh;
 left: 46vw;
 animation-name: shades;
 animation-duration: 4s;
@@ -62,6 +62,7 @@ animation-duration: 4s;
 
 @media screen and (max-width: 400px){
     .shades {
+        top: 42vh;
         left: 38vw;
     }
     @keyframes shades {
