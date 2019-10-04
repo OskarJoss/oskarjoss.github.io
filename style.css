@@ -2,6 +2,10 @@ body {
     background: #ff6096;
     height: 100vh;
     overflow: hidden;
+    animation-name: money;
+    animation-delay: 3.5s;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
 }
 
 h1 {
@@ -12,6 +16,10 @@ h1 {
     margin: 5vh;
     margin-right: 0;
     margin-left: 0;
+    animation-name: edge;
+    animation-delay: 4s;
+    animation-duration: .005s;
+    animation-fill-mode: forwards;
 }
 
 .picture-box {
@@ -24,6 +32,10 @@ h1 {
     border-radius: 50%;
     height: 60vh;
     border: 3px solid black;
+    animation-name: golden;
+    animation-delay: 3.8s;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
 }
 
 .media {
@@ -61,7 +73,7 @@ left: calc(50% - 5.5vh);
 
 }
 
-@media screen and (max-width: 340px){
+@media screen and (max-width: 443px){
     h1 {
         font-size: 50px;
     }
@@ -74,4 +86,39 @@ left: calc(50% - 5.5vh);
        }
 
 }
+}
+
+@keyframes money {
+   0% {
+    background-image: #ff6096;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   100% {
+       background-image: url(img/download.jpeg);
+       background-repeat: no-repeat;
+       background-size: cover;
+   }
+}
+
+@keyframes edge {
+    0% {
+        font-family: 'Indie Flower', cursive;
+        color: white;
+
+    }
+    100% {
+        font-family: 'Black Ops One', cursive;
+        color: black;
+    }
+}
+
+@keyframes golden {
+    0% {
+        border: 3px solid black;
+
+    }
+    100% {
+        border: 5px solid goldenrod;
+    }
 }
