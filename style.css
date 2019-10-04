@@ -1,13 +1,17 @@
 body {
     background: #ff6096;
     height: 100vh;
+    overflow: hidden;
 }
 
 h1 {
-    font-size: 60px;
+    font-size: 10vh;
     font-family: 'Indie Flower', cursive;
     text-align: center;
     color: white;
+    margin: 5vh;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .picture-box {
@@ -18,8 +22,7 @@ h1 {
 
 .picture-me {
     border-radius: 50%;
-    min-height: 300px;
-    max-height: 60vh;
+    height: 60vh;
     border: 3px solid black;
 }
 
@@ -29,8 +32,8 @@ h1 {
 }
 
 .picture-insta {
-    height: 30px;
-    margin-top: 20px;
+    height: 5vh;
+    margin-top: 5vh;
 }
 
 .picture-insta:hover {
@@ -38,45 +41,38 @@ h1 {
 }
 
 @keyframes shades {
-    0% { height: 20vh;
-        position: fixed;
-        top: 0;
-        left: 46vw;
-        display: none}
-    100% {top: 39vh;
-        left: 46vw;
-        position: fixed;
-    display: block;}
+    0% { 
+        transform: translateY(0);  
+    }
+    100% {
+        transform: translateY(calc(10vh + 43vh));       
+   }
 
 }
 
 .shades {
-height: 20vh;
-position: fixed;
-top: 39vh;
-left: 46vw;
+height: 15vh;
+position: absolute;
 animation-name: shades;
 animation-duration: 4s;
+animation-fill-mode: forwards;
+top: -10vh;
+left: calc(50% - 5.5vh);
 
 }
 
-@media screen and (max-width: 400px){
-    .shades {
-        top: 42vh;
-        left: 38vw;
+@media screen and (max-width: 340px){
+    h1 {
+        font-size: 50px;
     }
     @keyframes shades {
-        0% { height: 20vh;
-            position: fixed;
-            top: 0;
-            left: 46vw;
-            display: none}
-        100% {top: 42vh;
-            left: 38vw;
-            position: fixed;
-        display: block;}
-    
-    }
+        0% { 
+            transform: translateY(0);  
+        }
+        100% {
+            transform: translateY(calc(10vh + 39vh));       
+       }
+
 
 
 
