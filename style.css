@@ -75,14 +75,14 @@ left: calc(50% - 5.5vh);
 
 @media screen and (max-width: 443px){
     h1 {
-        font-size: 50px;
+        font-size: 45px;
     }
     @keyframes shades {
         0% { 
             transform: translateY(0);  
         }
         100% {
-            transform: translateY(calc(10vh + 39vh));       
+            transform: translateY(calc(10vh + 37vh));       
        }
 
 }
